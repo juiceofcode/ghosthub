@@ -1,6 +1,4 @@
 # Binaries for programs and plugins
-*.exe
-*.exe~
 *.dll
 *.so
 *.dylib
@@ -18,9 +16,6 @@ vendor/
 
 # Go workspace file
 go.work
-
-# Build directory
-build/
 
 # IDE specific files
 .idea
