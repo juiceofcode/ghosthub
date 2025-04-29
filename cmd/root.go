@@ -16,6 +16,9 @@ var rootCmd = &cobra.Command{
 	Long: `ghosthub is a tool for managing multiple Git profiles,
 allowing you to easily switch between different identities and SSH keys
 for different contexts (work, freelance, personal projects, etc).`,
+	CompletionOptions: cobra.CompletionOptions{
+		DisableDefaultCmd: true,
+	},
 }
 
 func Execute() {
