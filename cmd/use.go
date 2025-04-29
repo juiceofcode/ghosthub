@@ -3,8 +3,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/juiceofcode/ghosthub-cli/internal/gitconfig"
-	"github.com/juiceofcode/ghosthub-cli/internal/sshconfig"
+	"github.com/juiceofcode/ghosthub/internal/gitconfig"
+	"github.com/juiceofcode/ghosthub/internal/sshconfig"
 
 	"github.com/spf13/cobra"
 )

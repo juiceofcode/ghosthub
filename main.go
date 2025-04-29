@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/juiceofcode/ghosthub-cli/cmd"
+	"github.com/juiceofcode/ghosthub/cmd"
 )
 
 func main() {

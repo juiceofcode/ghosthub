@@ -9,7 +9,7 @@ A CLI tool to manage multiple Git profiles with SSH keys.
 If you have Go installed, you can install GhostHub directly:
 
 ```bash
-go install github.com/juiceofcode/ghosthub-cli
+go install github.com/juiceofcode/ghosthub
 ```
 
 ### Option 2: Manual Installation
@@ -39,8 +39,8 @@ sudo mv ghosthub-<your-system> /usr/local/bin/ghosthub
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/juiceofcode/ghosthub-cli.git
-cd ghosthub-cli
+git clone https://github.com/juiceofcode/ghosthub.git
+cd ghosthub
 ```
 
 2. Build and install:
@@ -53,8 +53,8 @@ cd ghosthub-cli
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/juiceofcode/ghosthub-cli.git
-cd ghosthub-cli
+git clone https://github.com/juiceofcode/ghosthub.git
+cd ghosthub
 ```
 
 2. Build and install:

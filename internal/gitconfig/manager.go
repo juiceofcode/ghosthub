@@ -5,7 +5,7 @@ import (
 	"os/exec"
 	"runtime"
 
-	"github.com/juiceofcode/ghosthub-cli/internal/profile"
+	"github.com/juiceofcode/ghosthub/internal/profile"
 )
 
 func SwitchProfile(profileName string) error {
@@ -31,7 +31,7 @@ func SwitchProfile(profileName string) error {
 }
 
 func sendNotification(profileName string) {
-	title := "ghosthub-cli"
+	title := "ghosthub"
 	message := fmt.Sprintf("Profile '%s' successfully activated!", profileName)
 	switch runtime.GOOS {
 	case "linux":

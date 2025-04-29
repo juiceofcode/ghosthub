@@ -1,4 +1,4 @@
-module github.com/juiceofcode/ghosthub-cli
+module github.com/juiceofcode/ghosthub
 
 go 1.21.0
 

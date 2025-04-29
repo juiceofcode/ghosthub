@@ -13,7 +13,7 @@ var cfgFile string
 var rootCmd = &cobra.Command{
 	Use:   "ghosthub",
 	Short: "Cross-platform Git profile manager",
-	Long: `ghosthub-cli is a tool for managing multiple Git profiles,
+	Long: `ghosthub is a tool for managing multiple Git profiles,
 allowing you to easily switch between different identities and SSH keys
 for different contexts (work, freelance, personal projects, etc).`,
 }
