@@ -2,8 +2,9 @@ package cmd
 
 import (
 	"fmt"
-	"ghosthub-cli/internal/profile"
-	"ghosthub-cli/internal/sshconfig"
+
+	"github.com/juiceofcode/ghosthub-cli/internal/profile"
+	"github.com/juiceofcode/ghosthub-cli/internal/sshconfig"
 
 	"github.com/spf13/cobra"
 )

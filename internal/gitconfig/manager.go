@@ -5,7 +5,7 @@ import (
 	"os/exec"
 	"runtime"
 
-	"ghosthub-cli/internal/profile"
+	"github.com/juiceofcode/ghosthub-cli/internal/profile"
 )
 
 func SwitchProfile(profileName string) error {
