@@ -18,7 +18,7 @@ var createKeyCmd = &cobra.Command{
 	Args:  cobra.ExactArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
 		profile := args[0]
-		if err := sshconfig.GenerateKeyPair(profile); err != nil {
+		if err := sshconfig.GenerateKeyPair(profile, "ed25519"); err != nil {
 			return err
 		}
 		fmt.Printf("SSH keys generated for '%s'.\n", profile)

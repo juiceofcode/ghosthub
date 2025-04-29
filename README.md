@@ -1,68 +1,91 @@
-# ghosthub-cli
+# GhostHub CLI
 
-A cross-platform Git profile manager that allows you to easily switch between different identities and SSH keys for different contexts (work, freelance, personal projects, etc).
+A CLI tool to manage multiple Git profiles with SSH keys.
 
 ## Installation
 
 ```bash
-go install github.com/juiceofcode/ghosthub-cli@latest
+go install github.com/juiceofcode/ghosthub-cli
 ```
 
 ## Usage
 
+### Add a new Git profile
+
+```bash
+ghosthub add [profile] --name "Your Name" --email "your.email@example.com" --keygen "ed25519"
+```
+
+Options:
+- `--name`: Your Git user name
+- `--email`: Your Git email
+- `--keygen`: SSH key type (ed25519 or rsa-4096)
+
+### Delete a Git profile
+
+```bash
+ghosthub delete [profile]
+```
+
+### List all Git profiles
+
+```bash
+ghosthub list
+```
+
+### Switch to a Git profile
+
+```bash
+ghosthub use [profile]
+```
+
+### Show current Git profile information
+
+```bash
+ghosthub info
+```
+
+### Generate a new SSH key
+
+```bash
+ghosthub key [profile] --type "ed25519"
+```
+
+Options:
+- `--type`: SSH key type (ed25519 or rsa-4096)
+
+## Examples
+
 ### Add a new profile
 
 ```bash
-ghosthub profile add my-profile --email="your@email.com" --ssh-key="/path/to/ssh_key" --name="Your Name"
-```
-
-The `--name` parameter is optional. If not provided, the profile name will be used.
-
-### List profiles
-
-```bash
-ghosthub profile list
+ghosthub add work --name "John Doe" --email "john@company.com" --keygen "ed25519"
 ```
 
 ### Switch to a profile
 
 ```bash
-ghosthub profile switch my-profile
+ghosthub use work
 ```
 
-### Remove a profile
+### List all profiles
 
 ```bash
-ghosthub profile remove my-profile
+ghosthub list
 ```
 
-## Profile Structure
+### Delete a profile
 
-Profiles are stored in `~/.ghosthub/profiles.json` in the following format:
-
-```json
-{
-  "freelancer": {
-    "name": "John Smith",
-    "email": "john@freelance.com",
-    "sshKeyPath": "/home/user/.ssh/id_freelance"
-  },
-  "company": {
-    "name": "John Corp",
-    "email": "john@company.com",
-    "sshKeyPath": "/home/user/.ssh/id_company"
-  }
-}
+```bash
+ghosthub delete work
 ```
 
-## Features
+### Generate a new SSH key
 
-- ✅ Multiple Git profile management
-- ✅ Support for different SSH keys per profile
-- ✅ Automatic configuration of user.name and user.email
-- ✅ Compatible with Windows, macOS and Linux
-- ✅ Support for any Git service (GitHub, GitLab, Bitbucket, etc)
+```bash
+ghosthub key work --type "ed25519"
+```
 
-## Contributing
+## License
 
-Contributions are welcome! Please feel free to submit pull requests. 
+MIT 
